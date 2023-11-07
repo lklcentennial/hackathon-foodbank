@@ -1,5 +1,9 @@
-import Image from 'next/image'
+import CenterContainer from "./components/CenterContainer";
 
 export default function Home() {
-  return ()
+  return (
+    <CenterContainer>
+      <h1>test</h1>
+    </CenterContainer>
+  );
 }
