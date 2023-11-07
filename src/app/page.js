@@ -4,6 +4,7 @@ import SignInButton from "@/components/SignIn";
 import SignOutButton from "@/components/SignOutButton";
 import { useSession } from "next-auth/react";
 import Navbar from "@/components/Navbar";
+import Inventory from "@/components/Inventory"
 import { useRouter } from "next/navigation";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
   return (
     <CenterContainer>
       <Navbar/>
+      <Inventory/>
       {session.data ? (
         <>
           <h1 className="m-2 text-4xl font-bold text-gray-900">

@@ -1,3 +1,14 @@
 {
+    "inventoryID" : 1,
+    "inventoryDetails" : [{
+        "foodID" : 1,
+        "foodName" : "bread", 
+        "quantity" : 5 
+    },
+    {
+        "foodID" : 2,
+        "foodName" : "fish", 
+        "quantity" : 2    
+    }]
     
 }

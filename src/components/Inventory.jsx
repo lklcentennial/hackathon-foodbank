@@ -1,9 +1,27 @@
 import React from "react";
+import data from "@/components/dummy data/inventory.json";
 
-const FlexContainer = ({ children }) => {
+const FlexContainer = () => {
   return (
     <div className={`m-4 flex flex-col`}>
-      {children}
+      <table>
+        <thead>
+          <tr>
+            <th>Food ID</th>
+            <th>Food Name</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.inventoryDetails.map((item) => (
+            <tr key={item.foodID}>
+              <td>{item.foodID}</td>
+              <td>{item.foodName}</td>
+              <td>{item.quantity}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };
