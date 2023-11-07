@@ -13,7 +13,6 @@ export default function Home() {
   return (
     <CenterContainer>
       <Navbar/>
-      <Inventory/>
       {session.data ? (
         <>
           <h1 className="m-2 text-4xl font-bold text-gray-900">
