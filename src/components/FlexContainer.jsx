@@ -1,6 +1,6 @@
 import React from "react";
 
-const FlexContainer = ({ children }: { children: React.ReactNode }) => {
+const FlexContainer = ({ children }) => {
   return (
     <div className={`m-4 flex flex-col`}>
       {children}
