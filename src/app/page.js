@@ -1,4 +1,4 @@
-import CenterContainer from "./components/CenterContainer";
+import CenterContainer from "@/components/CenterContainer";
 
 export default function Home() {
   return (

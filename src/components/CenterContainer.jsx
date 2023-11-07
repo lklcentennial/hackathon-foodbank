@@ -1,6 +1,6 @@
 import React from "react";
 
-const FlexContainer = ({ children }) => {
+const CenterContainer = ({ children }) => {
   return (
     <div className={`m-4 flex flex-col justify-center items-center h-screen`}>
       {children}
@@ -8,4 +8,4 @@ const FlexContainer = ({ children }) => {
   );
 };
 
-export default FlexContainer;
+export default CenterContainer;
