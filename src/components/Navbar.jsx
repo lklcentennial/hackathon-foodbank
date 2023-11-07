@@ -8,7 +8,7 @@ const Navbar = () => {
   const test = "Home";
   return (
     <div className="fixed text-black text-center inset-x-0 bottom-0 bg-blue-500 flex justify-around p-4 invert">
-      <Link href="#" className="flex flex-col items-center justify-center">
+      <Link href="./Inventory" className="flex flex-col items-center justify-center">
         <img src={home.src} alt="home" width={30} />
         <p>{test}</p>
       </Link>

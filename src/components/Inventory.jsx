@@ -14,9 +14,9 @@ const FlexContainer = () => {
         </thead>
         <tbody>
           {data.inventoryDetails.map((item) => (
-            <tr key={item.foodID}>
-              <td>{item.foodID}</td>
-              <td>{item.foodName}</td>
+            <tr key={item.foodid}>
+              <td>{item.foodid}</td>
+              <td>{item.foodname}</td>
               <td>{item.quantity}</td>
             </tr>
           ))}
