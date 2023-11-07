@@ -5,7 +5,7 @@ import React from "react";
 const SignOutButton = () => {
   return (
     <button
-      className="border text-slate-300 text-xl font-bold m-2 p-4 rounded bg-slate-700 outline-none"
+      className="text-gray-900 text-md font-bold m-2 p-4 rounded underline"
       onClick={() => signOut()}
     >
       Sign Out
