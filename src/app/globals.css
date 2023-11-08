@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* FlexContainer.css */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .pagination__link {
+    cursor: pointer;
+  }
+  
+  .pagination__link--disabled {
+    cursor: not-allowed;
+  }
+  

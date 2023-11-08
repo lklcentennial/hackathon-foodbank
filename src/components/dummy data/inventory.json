@@ -4,19 +4,48 @@
             "foodid": 1,
             "foodname": "Rice",
             "quantity": 10,
-            "id": "654a9ab843cdf4d620244142"
+            "__v": 0,
+            "category": "asian",
+            "expiry": "2023-12-01"
         },
         {
             "foodid": 2,
             "foodname": "Pasta",
             "quantity": 10,
-            "id": "654a9ada43cdf4d620244144"
+            "__v": 0,
+            "category": "western",
+            "expiry": "2023-11-23"
         },
         {
             "foodid": 3,
             "foodname": "Chicken",
+            "quantity": 50,
+            "__v": 0,
+            "category": "universal",
+            "expiry": "2023-12-01"
+        },
+        {
+            "foodid": 4,
+            "foodname": "Naan",
+            "quantity": 120,
+            "category": "south asian",
+            "expiry": "2023-11-01"
+        },
+        {
+            "foodid": 8,
+            "foodname": "Kimchi",
+            "quantity": 12,
+            "category": "East Asia",
+            "description": "Fermented vegetables, usually cabbage or radishes, seasoned with spices",
+            "expiry": "2023-11-30"
+        },
+        {
+            "foodid": 10,
+            "foodname": "Ramen Noodles",
             "quantity": 10,
-            "id": "654a9ae543cdf4d620244146"
+            "category": "East Asia",
+            "description": "Japanese Style noodles",
+            "expiry": "2023-12-19"
         }
     ]
 }
