@@ -92,7 +92,7 @@ function Validation() {
             />
             {isError && <div className="text-red-500 mt-2">{errorMsg}</div>}
             <button
-              className="bg-blue-500 text-white rounded px-4 py-2 mt-4 hover:bg-blue-700"
+            className="m-2 -mt-2 py-4 px-12 text-2xl bg-amber-400 text-center text-gray-900 transition duration-500 border-2 border-amber-400 hover:border-gray-900"
               type="submit"
             >
               Upload
@@ -132,7 +132,7 @@ function Validation() {
         )}
         {uploadProgress === 100 && (
           <button
-            className="border text-slate-300 text-xl font-bold m-2 p-4 rounded bg-slate-700 outline-none"
+            className="m-2 -mt-2 py-4 px-12 text-2xl bg-amber-400 text-center text-gray-900 transition duration-500 border-2 border-amber-400 hover:border-gray-900"
             onClick={() => router.push("/dashboard")}
           >
             Procced
