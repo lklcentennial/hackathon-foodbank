@@ -23,13 +23,13 @@ const AutoComplete = () => {
   return (
     <div className="">
       <input
-        className="mx-2 p-4 text-2xl border-2 border-gray-700 focus:border-gray-900"
+        className="mx-2 p-4 text-sm lg:text-2xl border-2 rounded border-gray-700 focus:border-gray-900"
         type="text"
         value={inputValue}
         onChange={handleChange}
         placeholder="Type here"
       />
-      <ul className="bg-gray-300 mx-4">
+      <ul className="bg-gray-300 mx-4 absolute">
         {suggestions.map((suggestion, index) => (
           <li
             className="m-2 p-2 cursor-pointer"

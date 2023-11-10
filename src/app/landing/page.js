@@ -18,7 +18,7 @@ export default function Home() {
           </h1>
 
           <button
-            className="m-2 -mt-2 py-4 px-12 text-2xl bg-amber-400 text-center text-gray-900 transition duration-500 border-2 border-amber-400 hover:border-gray-900"
+            className="m-2 -mt-2 py-4 px-12 text-2xl rounded bg-orange-500 text-center text-white transition duration-500 hover:bg-orange-700"
             onClick={() => router.push("/verify")}
           >
             Procced

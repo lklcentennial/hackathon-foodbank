@@ -24,12 +24,9 @@ const RegisterPage = () => {
             <AutoComplete />
           </div>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92284.78698049988!2d-79.2948247449442!3d43.712635657909864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4ce566a8fd331%3A0x33b3637f9e77aa75!2sFeed%20Scarborough%20-%20Cliffside%20Food%20Bank!5e0!3m2!1sen!2sca!4v1699446965856!5m2!1sen!2sca"
-            width="600"
-            height="450"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/d/embed?mid=1MpTS0uhS8WNsUGAm0S8rce122crYP0lS&ehbc=2E312F"
+            width="640"
+            height="480"
           ></iframe>
         </div>
       </FadeInOut>

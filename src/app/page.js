@@ -1,57 +1,39 @@
-import FadeInOut from "@/components/FadeInOut";
-import FlexContainer from "@/components/FlexContainer";
-import CenterContainer from "@/components/CenterContainer";
+"use client";
 import React from "react";
-import backgroundImg from "@/app/icons/tile_background.png";
-import Image from "next/image";
+import Navbar from "@/components/Navbar";
+// import GoogleMap from './googlemap';
 import Link from "next/link";
+import Services from "@/components/Services";
+import Card from "@/components/Card";
+// import { GoogleMap } from '@react-google-maps/api';
 
-const LandingPage = () => {
+const Home = () => {
   return (
-    <CenterContainer>
-      <div>
-        <FadeInOut show={true} duration={250}>
-          <h1 className="text-9xl m-2">Find you local FoodBank</h1>
-        </FadeInOut>
-        {/* <div className="bg-color bg-gray-900 px-4 py-0.5 w-1/2 m-4"></div> */}
-        <FadeInOut show={true} duration={500}>
-          <h1 className="text-7xl m-4">
-            We are here to help!
-            <Link href={"/locate"}>
-              <button className="mx-2 -mt-2 py-4 px-12 text-2xl bg-amber-400 text-center text-gray-900 transition duration-500 border-2 border-amber-400 hover:border-gray-900">
-                Locate nearest foodbank
-              </button>
+    <div>
+      <Navbar />
+      <div className="bg-white-500 h-screen flex justify-center items-center">
+        <div className="text-center text-orange">
+          <h1 className="text-6xl font-bold mb-6">Find your local FoodBank</h1>
+          <div className="space-y-4">
+            <Link
+              href="/locate"
+              className="bg-orange-500 text-white py-4 px-8 rounded hover:bg-orange-700 hover:text-white transition duration-300"
+            >
+              Locate nearest FoodBank
             </Link>
-            <Link href={"/landing"}>
-              <button className="m-4 py-4 px-12 text-2xl underline text-center text-gray-900 transition duration-500 border-2 border-white hover:border-gray-900">
-                I own a foodbank
-              </button>
+            <Link
+              href="/landing"
+              className="bg-white text-orange-500 py-4 px-8 rounded hover:bg-gray-600 hover:text-white transition duration-300"
+            >
+              I own a FoodBank
             </Link>
-          </h1>
-        </FadeInOut>
-      </div>
-      <FadeInOut show={true} duration={750}>
-        <div className="flex flex-row">
-          {/* <div className="grayscale">
-            <Image
-              src={splashImg.src}
-              alt=""
-              width={1920 / 4.5}
-              height={2880 / 4.5}
-            />
-          </div> */}
-          <div className="flex flex-col">
-            {/* <button className="m-4 py-4 px-12 text-2xl bg-amber-400 text-center text-gray-900">
-              Locate nearest foodbank
-            </button> */}
-            {/* <button className="m-4 py-4 px-12 text-2xl underline text-center text-gray-900">
-              I own a foodbank
-            </button> */}
           </div>
         </div>
-      </FadeInOut>
-    </CenterContainer>
+      </div>
+    <Services />
+
+    </div>
   );
 };
 
-export default LandingPage;
+export default Home;
